@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardMaxElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/option_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/circle_background"
+        android:layout_weight="20"
+        />
+   <TextView
+       android:id="@+id/option_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Hello hoe "
+       android:layout_weight="80"
+       android:layout_gravity="center_vertical"
+       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+       android:textAlignment="center"
+
+       />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

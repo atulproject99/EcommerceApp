@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ff34"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/profile_background"
+        android:id="@+id/layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circle_background"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="-30dp"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circle_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="-30dp"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atul maurya"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+9187543433432"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="atulmaurya773@gmail.com"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+
+</LinearLayout>
+
+
+    </RelativeLayout>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/splashbackground"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:civ_shadow="true"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:civ_shadow_radius="1dp"
+        app:civ_shadow_color="#3f51b5"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_option_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        />
+
+
+</RelativeLayout>

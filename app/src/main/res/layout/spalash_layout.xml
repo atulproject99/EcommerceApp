@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginLeft="55dp"
+        android:alpha="0.1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-60dp"
+        android:alpha="0.1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-70dp"
+        android:layout_marginBottom="-5dp"
+        android:alpha="0.2"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splashbackground"
+        android:layout_marginTop="-10dp"
+
+        />
+    <TextView
+        android:id="@+id/my_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My E-shooping App"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:layout_below="@id/back"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0.2"
+        />
+
+</RelativeLayout>
